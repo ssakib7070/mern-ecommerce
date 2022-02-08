@@ -1,0 +1,21 @@
+{
+  "name": "mern-ecommerce",
+  "version": "1.0.0",
+  "main": "server.js",
+  "author": "Sadman Sakib",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "start": "node backend/server",
+    "server": "nodemon backend/server",
+    "client": "npm start --prefix frontend",
+    "dev": "concurrently \"yarn server\" \"yarn client\""
+  },
+  "dependencies": {
+    "dotenv": "^16.0.0",
+    "express": "^4.17.2"
+  },
+  "devDependencies": {
+    "concurrently": "^7.0.0"
+  }
+}
