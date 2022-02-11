@@ -10,6 +10,7 @@ import Footer from "./components/Footer.js";
 // screens
 import HomeScreen from "./screens/HomeScreen";
 import ProductScreen from "./screens/ProductScreen";
+import CartScreen from "./screens/CartScreen";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <Switch>
             <Route path="/" exact component={HomeScreen} />
             <Route path="/product/:id" component={ProductScreen} />
+            <Route path="/cart/:id?" component={CartScreen} />
             {/* <Route path="/users">
             <Users />
           </Route> */}
