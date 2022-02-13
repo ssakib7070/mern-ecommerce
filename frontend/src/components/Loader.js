@@ -1,9 +1,10 @@
 import React from "react";
 import { Spinner } from "react-bootstrap";
 
-const Loader = () => {
+const Loader = (props) => {
   return (
     <Spinner
+      {...props}
       animation="border"
       role="status"
       style={{
