@@ -11,7 +11,7 @@ const CheckoutSteps = ({ step1, step2, step3, step4 }) => {
             Sign In
           </Link>
         ) : (
-          <a className="nav-item text-decoration-none" disabled>
+          <a className="nav-item text-decoration-none" href="#" disabled>
             Sign In
           </a>
         )}
@@ -25,7 +25,7 @@ const CheckoutSteps = ({ step1, step2, step3, step4 }) => {
             Shipping
           </Link>
         ) : (
-          <a className="nav-item text-decoration-none" disabled>
+          <a className="nav-item text-decoration-none" href="#" disabled>
             Shipping
           </a>
         )}
@@ -36,7 +36,7 @@ const CheckoutSteps = ({ step1, step2, step3, step4 }) => {
             Payment
           </Link>
         ) : (
-          <a className="nav-item text-decoration-none" disabled>
+          <a className="nav-item text-decoration-none" href="#" disabled>
             Payment
           </a>
         )}
@@ -51,7 +51,7 @@ const CheckoutSteps = ({ step1, step2, step3, step4 }) => {
             Placeorder
           </Link>
         ) : (
-          <a className="nav-item text-decoration-none" disabled>
+          <a className="nav-item text-decoration-none" href="#" disabled>
             Placeorder
           </a>
         )}{" "}

@@ -1,6 +1,6 @@
 import "./App.css";
 
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { Switch, Route } from "react-router-dom";
 import { Container } from "react-bootstrap";
 
 // components
@@ -18,6 +18,8 @@ import ShippingScreen from "./screens/ShippingScreen";
 import PaymentScreen from "./screens/PaymentScreen";
 import placeOrderScreen from "./screens/PlaceOrderScreen";
 import OrderScreen from "./screens/OrderScreen";
+import UserListScreen from "./screens/UserListScreen";
+import UserEditScreen from "./screens/UserEditScreen";
 
 function App() {
   return (
@@ -26,6 +28,8 @@ function App() {
       <main className="py-3">
         <Container>
           <Switch>
+            <Route path="/admin/user/:id" component={UserEditScreen} />
+            <Route path="/admin/userList" component={UserListScreen} />
             <Route path="/order/:id" component={OrderScreen} />
             <Route path="/placeorder" component={placeOrderScreen} />
             <Route path="/payment" component={PaymentScreen} />

@@ -1,16 +1,15 @@
-import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { savePaymentMethod } from "../actions/cartActions";
 
 // components
-import Message from "../components/Message";
+// import Message from "../components/Message";
 import FormContainer from "../components/FormContainer";
 import CheckoutSteps from "../components/CheckoutSteps";
 
-import { register } from "../actions/userActions";
-import { Button, Col, Form, Row, FormControl } from "react-bootstrap";
-import Loader from "../components/Loader";
+// import { register } from "../actions/userActions";
+import { Button, Col, Form } from "react-bootstrap";
+// import Loader from "../components/Loader";
 
 const PaymentScreen = ({ history }) => {
   const cart = useSelector((state) => state.cart);

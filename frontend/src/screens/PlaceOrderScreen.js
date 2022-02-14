@@ -4,19 +4,10 @@ import { useDispatch, useSelector } from "react-redux";
 
 // components
 import Message from "../components/Message";
-import FormContainer from "../components/FormContainer";
+// import FormContainer from "../components/FormContainer";
 import CheckoutSteps from "../components/CheckoutSteps";
 
-import {
-  Button,
-  Col,
-  Form,
-  Row,
-  FormControl,
-  ListGroup,
-  Image,
-  Card,
-} from "react-bootstrap";
+import { Button, Col, Row, ListGroup, Image, Card } from "react-bootstrap";
 
 import { createOrder } from "../actions/orderActions";
 
@@ -49,7 +40,7 @@ const PlaceOrderScreen = ({ history }) => {
     if (success) {
       history.push(`/order/${order._id}`);
     }
-  }, [history, success]);
+  }, [history, success, order]);
 
   const placeOrderHandler = () => {
     dispatch(

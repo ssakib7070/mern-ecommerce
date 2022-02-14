@@ -5,19 +5,10 @@ import { useDispatch, useSelector } from "react-redux";
 
 // components
 import Message from "../components/Message";
-import FormContainer from "../components/FormContainer";
+// import FormContainer from "../components/FormContainer";
 import Loader from "../components/Loader";
 
-import {
-  Button,
-  Col,
-  Form,
-  Row,
-  FormControl,
-  ListGroup,
-  Image,
-  Card,
-} from "react-bootstrap";
+import { Col, Row, ListGroup, Image, Card } from "react-bootstrap";
 
 import { payOrder, getOrderDetails } from "../actions/orderActions";
 import { ORDER_PAY_RESET } from "../constants/orderConstants";
