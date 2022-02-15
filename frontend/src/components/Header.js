@@ -1,6 +1,9 @@
 import React from "react";
 import { Container, Navbar, Nav, NavDropdown } from "react-bootstrap";
-import { Link } from "react-router-dom";
+import { Link, Route } from "react-router-dom";
+
+import SearchBox from "./SearchBox";
+
 import { useDispatch, useSelector } from "react-redux";
 import { logout } from "../actions/userActions";
 
@@ -24,7 +27,8 @@ const Header = () => {
           </Link>
           <Navbar.Toggle aria-controls="navbarScroll" />
           <Navbar.Collapse id="navbarScroll" className="justify-content-end">
-            {/* Goo */}
+            {/* <SearchBox /> */}
+            <Route render={({ history }) => <SearchBox history={history} />} />
             <Nav
               // style={{ maxHeight: "100px" }}
               navbarScroll
